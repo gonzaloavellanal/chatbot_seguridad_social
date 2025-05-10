@@ -1,10 +1,11 @@
+streamlit
 pdfminer.six
-langchain
+langchain==0.1.14
+langchain-community==0.0.28
 sentence-transformers
 huggingface-hub
-langchain-community
-accelerate
-bitsandbytes
-transformers
-torch
-textwrap3  # (para asegurar compatibilidad con textwrap en algunos entornos)
+transformers==4.40.1
+torch==2.2.2
+textwrap3
+
+ 
