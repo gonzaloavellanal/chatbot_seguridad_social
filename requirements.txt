@@ -9,4 +9,3 @@ accelerate
 streamlit
 openai
 faiss-cpu
-sentence-transformers
