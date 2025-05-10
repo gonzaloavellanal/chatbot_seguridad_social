@@ -54,13 +54,13 @@ Este caso de estudio no solo servirá para validar la eficacia del modelo en gen
 
 # Instalación de dependencias necesarias
 
-!pip install pdfminer.six
-!pip install langchain
-!pip install sentence-transformers
-!pip install huggingface-hub
-!pip install -U langchain-community
-!pip install accelerate
-!pip install -i https://pypi.org/simple/ bitsandbytes
+#!pip install pdfminer.six
+#!pip install langchain
+#!pip install sentence-transformers
+#!pip install huggingface-hub
+#!pip install -U langchain-community
+#!pip install accelerate
+#!pip install -i https://pypi.org/simple/ bitsandbytes
 
 !pip install --upgrade transformers
 
@@ -365,7 +365,7 @@ embedding_model = HuggingFaceEmbeddings(model_name="intfloat/multilingual-e5-lar
 faiss_index = FAISS.from_documents(documents, embedding_model)
 
 # Configurar el retriever de FAISS
-retriever = faiss_index.as_retriever(search_type="similarity", search_kwargs={"k": 4})
+retriever = faiss_index.as_retriever(search_type="similarity", search_kwargs={"k": 2})
 
 #revisar el hiperparámetro 4
 #search_type
@@ -498,7 +498,7 @@ pipe = pipeline(
     do_sample=True,  # Permitir muestreo para la generación
     repetition_penalty=1.1,  # Penalizar repeticiones para más diversidad
     return_full_text=False,  # Retornar solo el texto nuevo generado
-    max_new_tokens=300,  # Limitar a 300 tokens la generación
+    max_new_tokens=600,  # Limitar a 600 tokens la generación
 )
 
 messages = [
@@ -506,7 +506,7 @@ messages = [
     {"role": "user", "content": "¿Cuál es la distribución de aportes a BPS y a AFAP para los trabajadores que ingresaron al mercado laboral a partir del 1/12/2023"},
 ]
 
-outputs = pipe(messages, max_new_tokens=500, )
+outputs = pipe(messages, max_new_tokens=600, )
 
 print(outputs[0]["generated_text"])
 
@@ -643,6 +643,4 @@ response = rag_chain.invoke(question)
 
 print_wrap(f"Pregunta: {question}")
 print_wrap(f"Respuesta: {response}")
-
-pip install streamlit openai
 
