@@ -1,11 +1,8 @@
-pdfminer.six
+txtCopyEditpdfminer.six
 langchain
 sentence-transformers
 huggingface-hub
--U langchain-community
+langchain-community
 accelerate
--i https://pypi.org/simple/ bitsandbytes
---upgrade transformers
-streamlit
-openai
-faiss-cpu
+bitsandbytes
+transformers
