@@ -7,10 +7,10 @@ huggingface-hub
 transformers
 torch
 textwrap3
-
-langchain.vectorstores
-langchain.embeddings
-langchain.prompts
-langchain.llms
-langchain_core.runnables
-langchain.chains
+langchain-vectorstores
+langchain-embeddings
+langchain-prompts
+langchain-llms
+langchain-core
+langchain-chains
+faiss-cpu
