@@ -1,16 +1,10 @@
 streamlit
 pdfminer.six
-langchain
-langchain-community
+langchain>=0.1.0  # Asegúrate de tener la versión más reciente
+langchain-community>=0.0.16
 sentence-transformers
 huggingface-hub
 transformers
 torch
 textwrap3
-langchain-vectorstores
-langchain-embeddings
-langchain-prompts
-langchain-llms
-langchain-core
-langchain-chains
 faiss-cpu
