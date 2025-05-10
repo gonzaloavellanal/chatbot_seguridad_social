@@ -1,4 +1,4 @@
-txtCopyEditpdfminer.six
+pdfminer.six
 langchain
 sentence-transformers
 huggingface-hub
@@ -6,3 +6,5 @@ langchain-community
 accelerate
 bitsandbytes
 transformers
+torch
+textwrap3  # (para asegurar compatibilidad con textwrap en algunos entornos)
