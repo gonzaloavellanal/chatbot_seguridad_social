@@ -62,7 +62,7 @@ Este caso de estudio no solo servirá para validar la eficacia del modelo en gen
 #!pip install accelerate
 #!pip install -i https://pypi.org/simple/ bitsandbytes
 
-!pip install --upgrade transformers
+#!pip install --upgrade transformers
 
 # Instalación de dependencia FAISS (Bases de datos vectoriales)
 
