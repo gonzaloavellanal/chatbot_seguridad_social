@@ -1,4 +1,3 @@
-streamlit
 pdfminer.six
 langchain>=0.1.0  # Asegúrate de tener la versión más reciente
 langchain-community>=0.0.16
